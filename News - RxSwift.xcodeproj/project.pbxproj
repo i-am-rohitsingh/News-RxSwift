@@ -3,23 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F96BDA28267129F8009A2977 /* NewsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BDA27267129F8009A2977 /* NewsTableViewController.swift */; };
+		F96BDA2B2671332E009A2977 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = F96BDA2A2671332E009A2977 /* RxCocoa */; };
+		F96BDA2D2671332E009A2977 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F96BDA2C2671332E009A2977 /* RxSwift */; };
+		F96BDA2F26729AA2009A2977 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BDA2E26729AA2009A2977 /* Article.swift */; };
+		F96BDA3126729DDE009A2977 /* AricleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BDA3026729DDE009A2977 /* AricleTableViewCell.swift */; };
+		F96BDA342672A0BC009A2977 /* URLRequest+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F96BDA332672A0BC009A2977 /* URLRequest+Extension.swift */; };
 		F9ED6832266DEF43002E4310 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ED6831266DEF43002E4310 /* AppDelegate.swift */; };
 		F9ED6834266DEF43002E4310 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ED6833266DEF43002E4310 /* SceneDelegate.swift */; };
-		F9ED6836266DEF43002E4310 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9ED6835266DEF43002E4310 /* ViewController.swift */; };
 		F9ED6839266DEF43002E4310 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9ED6837266DEF43002E4310 /* Main.storyboard */; };
 		F9ED683B266DEF48002E4310 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9ED683A266DEF48002E4310 /* Assets.xcassets */; };
 		F9ED683E266DEF48002E4310 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9ED683C266DEF48002E4310 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F96BDA27267129F8009A2977 /* NewsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewController.swift; sourceTree = "<group>"; };
+		F96BDA2E26729AA2009A2977 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
+		F96BDA3026729DDE009A2977 /* AricleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AricleTableViewCell.swift; sourceTree = "<group>"; };
+		F96BDA332672A0BC009A2977 /* URLRequest+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+Extension.swift"; sourceTree = "<group>"; };
 		F9ED682E266DEF43002E4310 /* News - RxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "News - RxSwift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9ED6831266DEF43002E4310 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9ED6833266DEF43002E4310 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F9ED6835266DEF43002E4310 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9ED6838266DEF43002E4310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F9ED683A266DEF48002E4310 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9ED683D266DEF48002E4310 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,12 +39,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96BDA2D2671332E009A2977 /* RxSwift in Frameworks */,
+				F96BDA2B2671332E009A2977 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F96BDA322672A0A2009A2977 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F96BDA332672A0BC009A2977 /* URLRequest+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F9ED6825266DEF42002E4310 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +74,16 @@
 		F9ED6830266DEF43002E4310 /* News - RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				F96BDA322672A0A2009A2977 /* Extensions */,
 				F9ED6831266DEF43002E4310 /* AppDelegate.swift */,
 				F9ED6833266DEF43002E4310 /* SceneDelegate.swift */,
-				F9ED6835266DEF43002E4310 /* ViewController.swift */,
 				F9ED6837266DEF43002E4310 /* Main.storyboard */,
 				F9ED683A266DEF48002E4310 /* Assets.xcassets */,
 				F9ED683C266DEF48002E4310 /* LaunchScreen.storyboard */,
 				F9ED683F266DEF48002E4310 /* Info.plist */,
+				F96BDA27267129F8009A2977 /* NewsTableViewController.swift */,
+				F96BDA2E26729AA2009A2977 /* Article.swift */,
+				F96BDA3026729DDE009A2977 /* AricleTableViewCell.swift */,
 			);
 			path = "News - RxSwift";
 			sourceTree = "<group>";
@@ -83,6 +104,10 @@
 			dependencies = (
 			);
 			name = "News - RxSwift";
+			packageProductDependencies = (
+				F96BDA2A2671332E009A2977 /* RxCocoa */,
+				F96BDA2C2671332E009A2977 /* RxSwift */,
+			);
 			productName = "News - RxSwift";
 			productReference = F9ED682E266DEF43002E4310 /* News - RxSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +135,9 @@
 				Base,
 			);
 			mainGroup = F9ED6825266DEF42002E4310;
+			packageReferences = (
+				F96BDA292671332E009A2977 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = F9ED682F266DEF43002E4310 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,9 +165,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9ED6836266DEF43002E4310 /* ViewController.swift in Sources */,
+				F96BDA2F26729AA2009A2977 /* Article.swift in Sources */,
 				F9ED6832266DEF43002E4310 /* AppDelegate.swift in Sources */,
+				F96BDA3126729DDE009A2977 /* AricleTableViewCell.swift in Sources */,
 				F9ED6834266DEF43002E4310 /* SceneDelegate.swift in Sources */,
+				F96BDA342672A0BC009A2977 /* URLRequest+Extension.swift in Sources */,
+				F96BDA28267129F8009A2977 /* NewsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +372,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F96BDA292671332E009A2977 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F96BDA2A2671332E009A2977 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F96BDA292671332E009A2977 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		F96BDA2C2671332E009A2977 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F96BDA292671332E009A2977 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F9ED6826266DEF42002E4310 /* Project object */;
 }
